@@ -1,0 +1,297 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact {
+    height: 45px;
+    background-color: #2B1E16;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.contact .social {
+    margin-left: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vh;
+    font-size: 1.3rem;
+}
+
+.contact .phone {
+    margin-left: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vh;
+    font-size: 2.5vh;
+}
+
+.contact .app {
+    margin-left: 5vh;
+    margin-right: 2vh;
+}
+
+button {
+    height: fit-content;
+    font-size: 2.5vh;
+    font-weight: 600;
+    border-radius: 1rem;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: #f77117;
+}
+
+.nev {
+    height: 55px;
+    background-color: white;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    padding-left: 10px;
+}
+
+.logo h1 {
+    font-family: 'Dancing Script', cursive;
+    padding-left: 10px;
+    font-size: 2.5rem;
+}
+
+.options {
+    display: flex;
+    padding-left: 80vh;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.options div {
+    display: flex;
+    margin-left: 1.5625rem;
+    height: 55px;
+    align-items: center;
+}
+
+.options div:hover {
+    background-color: #f77117;
+}
+
+.intro {
+    height: 500px;
+    background-image: url(assets/img.jpg);
+    background-size: cover;
+
+}
+
+.intro h1 {
+    font-size: 4.6875rem;
+    font-weight: 900;
+    line-height: 5rem;
+    margin-left: 67vh;
+    padding-top: 30vh;
+
+}
+
+.intro h3 {
+    opacity: 0.8;
+    margin-left: 67vh;
+    padding-top: 3vh;
+}
+
+.survice {
+    background-color: #2B1E16;
+    height: 200px;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+
+}
+
+.survice div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.survice p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.survice span {
+    font-size: 3.125rem;
+}
+
+.about {
+    margin-left: 30vh;
+    display: flex;
+    height: 280px;
+    margin-top: 50px;
+}
+
+.about button {
+    margin-top: 50px;
+    background-color: #f77117;
+}
+
+.about button:hover {
+    background-color: #2B1E16;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.about .content {
+    width: 100vh;
+    line-height: 1.5625rem;
+}
+
+.about .content h1 {
+    font-size: 3.125rem;
+}
+
+.about .img {
+    background-image: url(assets/side.png);
+    background-size: cover;
+    width: 58vh;
+}
+
+.explore {
+    margin-left: 30vh;
+    margin-right: 30vh;
+    margin-top: 150px;
+    line-height: 2.1875rem;
+}
+
+.explore .cards {
+    display: flex;
+
+}
+
+.explore h1 {
+    font-size: 3.125rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cards>div:hover {
+    box-shadow: 10px 10px 10px rgba(75, 75, 75, 0.676);
+    transform: scale(1.02, 1.02);
+}
+
+.cards div {
+    height: 350px;
+    width: 17.5rem;
+    background-color: rgb(237, 235, 235);
+    border-radius: 1rem;
+}
+
+.cards div .img {
+    height: 250px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+
+#burger {
+    background-image: url(assets/burger1.jpg);
+    background-size: cover;
+}
+
+#pizza {
+    background-image: url(assets/pizza.jpg);
+    background-size: cover;
+}
+
+#biriyani {
+    background-image: url(assets/biriyani.jpg);
+    background-size: cover;
+}
+
+.footer {
+    height: 180px;
+    background-color: #2B1E16;
+    margin-top: 150px;
+    color: white;
+    display: flex;
+}
+
+.footer div {
+    padding-left: 4.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer #logo {
+    padding-left: 12.5rem;
+    padding-right: 12.5rem;
+    line-height: 1.875rem;
+    font-size: 3rem;
+}
+
+.footer #logo h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+@media(max-width:1000px){
+    .about .img{
+       display: none;
+    }
+    .intro h1{
+        margin-left: 50vh;
+    }
+    .intro h3{
+        margin-left: 50vh;
+    }
+    .contact .phone{
+        margin-left: 2vh;
+    }
+    .options {
+        padding-left: 30vh;
+    }
+}
+@media(max-width:500px){
+    .contact{
+        display: none;
+    }
+    .options{
+        display: none;
+    }
+    .intro h1{
+        margin-left: 2vh;
+        padding-top: 20vh;
+    }
+    .intro h3{
+        margin-left: 1vh;
+    }
+    .about{
+        margin-left: 5vh;
+        margin-bottom: 50vh;
+    }
+    .explore{
+        margin-left: 25vh;
+    }
+}
